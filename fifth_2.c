@@ -7,5 +7,5 @@ int main()
         b=b>>1;
         i+=1;
     }
-    printf("%d\n",8-i);
+    printf("%d\n",8-i); //here  i assume 8 bit number 
 }
