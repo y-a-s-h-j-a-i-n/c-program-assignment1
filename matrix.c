@@ -25,7 +25,7 @@ int array3[row1][column2];
 int temp=0,k;
 for(int i=0;i<row1;i++){
 for(int j=0;j<column2;j++){
-for(int k=0;k<column1;k++){
+for(int k=0;k<column1;k++){      // for NxN matrix order is N^3
 temp+=array1[i][k]*array2[k][j];
 }
 array3[i][j]=temp;
