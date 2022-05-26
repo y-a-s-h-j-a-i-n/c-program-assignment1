@@ -5,10 +5,15 @@ int *ptr, i , n1,value;
 printf("Enter size: ");
 scanf("%d", &n1);
 ptr = (int*) malloc(n1 * sizeof(int));
+if(ptr==NULL){
+    printf("ERROR: MEMORY ALLOCATION FAIL\n");
+    return 1;
+}
 printf("enter the element:\n");
-for(i = 0; i < n1; ++i)
-    scanf("%d\n",&ptr[i]);
-printf("enter value 1)add\n2)delete\n ");
+for(i = 0; i < n1; ++i){
+    scanf("%d",&ptr[i]);
+}
+printf("enter value \n1)add\n2)delete\n");
 scanf("%d", &value);
 if(value==1){
     int position,element;
